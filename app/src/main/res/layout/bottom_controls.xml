@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/control_background">
+
+  <Button
+      android:id="@+id/button_capture"
+      android:enabled="false"
+      style="@style/shutter_button"/>
+
+  <Button
+      android:id="@+id/doubleshot_button"
+      android:enabled="false"
+      android:visibility="gone"
+      android:layout_margin="16dp"
+      android:layout_gravity="start|center_vertical"
+      style="@style/doubleshot_button"/>
+
+</FrameLayout>

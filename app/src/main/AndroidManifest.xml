@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.google.android.imaging.pixelvisualcorecamera"
+  android:versionCode="1"
+  android:versionName="1.0.0">
+
+  <!--
+  HDR+: Apps must target sdk 26 or greater for access to the CONTROL_ENABLE_ZSL parameter key
+  and for the defaults in TEMPLATE_STILL_CAPTURE.
+  -->
+  <uses-sdk android:minSdkVersion="26"/>
+
+  <!--
+  HDR+: These features would restrict a Play Store app to Pixel 2 devices with
+  the Pixel Visual Core coprocessor. Feature filtering doesn't apply when
+  installing with adb.
+  -->
+  <uses-feature
+    android:name="com.google.hardware.camera.easel"
+    android:required="true"/>
+  <uses-feature
+    android:name="android.hardware.camera.any"
+    android:required="true"/>
+
+  <!--
+  Standard permissions required to use the camera and save photos.
+  -->
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+  <application
+    android:label="@string/app_name"
+    android:hardwareAccelerated="true"
+    android:allowBackup="false">
+
+    <activity
+      android:exported="true"
+      android:name=".gateway.GatewayActivity"
+      android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+    <activity
+      android:exported="false"
+      android:name=".api1.CameraApi1Activity"
+      android:theme="@android:style/Theme.NoTitleBar"
+      android:screenOrientation="portrait">
+    </activity>
+
+    <activity
+      android:exported="false"
+      android:name=".api2.CameraApi2Activity"
+      android:theme="@android:style/Theme.NoTitleBar"
+      android:screenOrientation="portrait">
+    </activity>
+
+  </application>
+
+</manifest>

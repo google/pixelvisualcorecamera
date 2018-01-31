@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:constantSize="true">
+  <item android:state_pressed="true" android:drawable="@drawable/doubleshot_button_pressed"/>
+  <item android:state_enabled="true" android:drawable="@drawable/doubleshot_button_enabled"/>
+  <item android:drawable="@drawable/doubleshot_button_disabled"/>
+</selector>

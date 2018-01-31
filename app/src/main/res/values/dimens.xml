@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Using dp for text, not sp, for fixed size. -->
+<resources>
+  <dimen name="shutter_button_size">64dp</dimen>
+  <dimen name="shutter_button_margin">8dp</dimen>
+  <dimen name="text_control_text_size">14dp</dimen>
+  <dimen name="control_margin">8dp</dimen>
+  <dimen name="button_min_size">48dp</dimen>
+
+  <!-- max size of controls and selection layout to allow seamless transitions -->
+  <dimen name="top_controls_main_dimension">80dp</dimen>
+
+  <dimen name="zoom_level_text_size">24sp</dimen>
+</resources>

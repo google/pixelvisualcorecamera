@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:constantSize="true">
+
+  <item android:state_pressed="true" android:drawable="@drawable/shutter_button_pressed"/>
+  <item android:state_enabled="true" android:drawable="@drawable/shutter_button_enabled"/>
+  <item android:drawable="@drawable/shutter_button_disabled"/>
+
+</selector>

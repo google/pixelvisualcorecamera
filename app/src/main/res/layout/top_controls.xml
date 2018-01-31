@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  style="@style/top_controls_horizontal">
+
+  <Button
+    android:id="@+id/api_selector"
+    style="@style/text_control"/>
+
+  <View
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
+
+  <ImageButton
+    android:id="@+id/control_camera_selection"
+    style="@style/image_control"/>
+
+</LinearLayout>
