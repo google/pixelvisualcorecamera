@@ -6,7 +6,7 @@ camera applications to accelerate HDR+ processing using Camera API 1 and 2.
 
 ## Device Requirements
 
-Pixel Visual Core is available in Google Pixel 2 devices only.
+Pixel Visual Core is available in Google Pixel 2 and Pixel 3 phones.
 
 ## Software Requirements
 
